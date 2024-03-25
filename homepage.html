@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trashtotreasure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kdu0lhs.css">
+</head>
+<body id="homepage">
+  <a href="index.html"><header>My Trash</header></a>
+  <section id="action">
+    <h1> Want to Purchase?</h1>
+    <h2 >Below enter your email and what iteam/iteams you would like to purchase</h2>
+<input id="email-input" type="email" placeholder="Enter your email/iteams here!">
+    <div id="pss">
+    <h4>or inquire about any iteams you may have interest in!</h4>
+  </div>
+  <div class="navbar">
+    <h3>Tops</h3>
+    <div class="image-container">
+      <img class="current-image" src="img/Betty-tshirt.png" alt="Image 1">
+      <figcaption>$10</figcaption>
+      <br>
+      <button onclick="prevImage(0)">Previous</button>
+      <button onclick="nextImage(0)">Next</button>
+    </div>
+    <h3>Bottoms</h3>
+    <div class="image-container">
+      <img class="current-image" src="img/red-skirt.png" alt="Image 1">
+      <figcaption>$10</figcaption>
+      <br>
+      <button onclick="prevImage(1)">Previous</button>
+      <button onclick="nextImage(1)">Next</button>
+    </div>
+    <h3>Shoes</h3>
+    <div class="image-container">
+      <img class="current-image" src="img/black boots.png" alt="Image 1">
+      <figcaption>$5</figcaption>
+      <br> 
+      <button onclick="prevImage(2)">Previous</button>
+      <button onclick="nextImage(2)">Next</button>
+    </div>
+    <h3>Objects</h3>
+    <div class="image-container">
+      <img class="current-image" src="img/digital camera.png" alt="Image 1">
+      <figcaption>$1-5</figcaption>
+      <br> 
+      <button onclick="prevImage(3)">Previous</button>
+      <button onclick="nextImage(3)">Next</button>
+    </div>
+  </div>
+      
+  <script>
+    let currentIndex = [0, 0, 0,0];
+    const images = [
+      ["img/Betty-tshirt.png", "img/grey-tanktop.png", "img/vegas shirt.png","img/vest.png","img/red sweater.png","img/ruffle tank.png","img/Ralphsweater.png",],
+      ["img/red-skirt.png", "img/levis jeans.png", "img/green pants.png","img/cargo pants.png", "img/denim shorts.png", "img/denim skirt.png","img/denim skirt2.png"],
+      ["img/black boots.png","img/blackandwhiteshoes.png","img/running shoes.png"],
+      ["img/digital camera.png", "img/green vase.png","img/book.png", "img/magazine-2.png","img/magazine.png", "img/vase.png","img/candlestick holder.png"]
+    ];
+
+    function prevImage(index) {
+      currentIndex[index] = (currentIndex[index] - 1 + images[index].length) % images[index].length;
+      document.querySelectorAll('.current-image')[index].src = images[index][currentIndex[index]];
+    }
+
+    function nextImage(index) {
+      currentIndex[index] = (currentIndex[index] + 1) % images[index].length;
+      document.querySelectorAll('.current-image')[index].src = images[index][currentIndex[index]];
+    }
+    
+  </script>
+  <div class="footer">
+  </div>
+</body>
+</html>
+
+</html>

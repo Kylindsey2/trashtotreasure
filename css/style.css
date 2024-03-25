@@ -1,0 +1,163 @@
+#landing {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(
+    rgba(185, 70, 245, 1),
+    rgba(249, 2, 29, 1),
+    rgb(255, 159, 209),
+    rgb(255, 255, 140)
+  );
+}
+
+#landing h3 {
+  color: rgb(249, 249, 249);
+  text-align: center;
+  font-size: 35px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+}
+#landing h1 {
+  text-align: center;
+  font-size: 100px;
+  font-family: "alta-california";
+  font-weight: 400;
+  font-style: normal;
+}
+#landing h2 {
+  text-align: center;
+  font-size: 70px;
+  font-family: "alta-california";
+  color: white;
+}
+.shop-button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: auto;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+#centered-text {
+  margin: 250px auto 100px auto;
+  text-align: center;
+}
+
+#homepage {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-image: linear-gradient(
+    rgba(185, 70, 245, 1),
+    rgba(249, 2, 29, 1),
+    rgb(255, 159, 209),
+    rgb(255, 255, 140)
+  );
+}
+header {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  font-family: "alta-california";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 200px;
+}
+
+.navbar {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.navbar a:hover {
+  color: rgba(185, 70, 245, 1);
+}
+.Newiteams {
+  text-align: center;
+  padding-top: 30px;
+  font-size: x-large;
+  color: white;
+}
+
+img {
+  width: 25%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-sizing: content-box;
+}
+img a {
+  width: 50px;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.previous {
+  color: rgb(255, 255, 255);
+}
+
+.next {
+  color: white;
+}
+.current-image {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+}
+#email-input {
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 200;
+  color: rgb(252, 149, 185);
+  border: 2px solid rgb(216, 149, 233);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  cursor: text;
+}
+#action {
+  text-align: center;
+  color: #fffdf3;
+  font-size: 30px;
+  font-weight: 200;
+  padding: 0%;
+  display: block;
+}
+#action h1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 80;
+  padding-top: 20px;
+}
+#action h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+}
+#pss {
+  font-family: Helvetica, sans-serif;
+  font-size: 10px;
+}
